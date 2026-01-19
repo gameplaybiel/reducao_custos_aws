@@ -15,11 +15,11 @@ O projeto foi estruturado para atacar três frentes: processamento de pedidos, a
 
 ```mermaid
 graph TD
-    A[Venda na Farmácia]-->|Trigger| B(AWS Lambda - Java)
-    B -->|Salva Receita|   C[Amazon S3]
-    B -->|Envia Dados  |   D[AWS Glue]
-    D -->|Gera Insight |   E[Relatório de Estoque]
-    C -->|Após 30 dias |   F[S3 Glacier]
+    A[Venda na Farmácia] -->|Trigger| B(AWS Lambda - Java)
+    B -->|Salva Receita| C[Amazon S3]
+    B -->|Envia Dados| D[AWS Glue]
+    D -->|Gera Insight| E[Relatório de Estoque]
+    C -->|Após 30 dias| F[S3 Glacier]
 ```
 
 ### **Etapa 1: AWS Lambda**
